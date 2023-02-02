@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2? 
+    family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMME STORE</title>
+  <link rel="icon" href="./assets/image_sofa.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+
+    <h1>EMME STORE</h1>
+    <img width="60px" height="78px" src="./assets/logo1-1.png" alt="logo Mood Store"><img>
+    <button class="boxitens" id="showBag">
+      <img width="60px" height="78px" src="./assets/image_cesta.png" class="img-menu">
+    </button>
+    <div class="notification hide">
+      <p class="text-notification"></p>
+    </div>
+    <div class="itens-buy hide">
+      <p class="item-null">Cesta vazia</p>
+      <div class="box-item-buy hide">
+        <img src="./assets/image_sofa.png" alt="Sofá Margot- Rosé" class="img-item-buy">
+        <div class="desc-item-buy">
+          <h3 class="title-item-buy">Sofá Margot- Rosé</h3>
+          <p class="amount-item-buy">Qtd: <span class="amount-item-buy" id="amountItem">1</span></p>
+          <p class="price-item-buy">R$: <span class="price-item-buy" id="priceItem">4.000</span></p>
+        </div>
+        <div class="buttons-item-buy">
+          <button class="delete-item" id="deleteItem">Excluir</button>
+          <button class="buy-item" id="buyItem">Fechar pedido</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="">
+    <section class="sell-item">
+      <div class="show-item">
+        <div class="rotate-item">
+          <button class="rotate-360" id="rotateItem"><img src="./assets/img_360.png" alt="Rotacionar"
+              class="button-360"></button>
+          <button class="close-rotate-360 hide" id="closeRotateItem"><img src="./assets/img_close.png"
+              alt="Fechar a rotação" class="close-button-360"></button>
+        </div>
+        <img src="./assets/image_sofa.png" alt="Sofá Margot II - Rosé" class="img-item-sell">
+        <img src="./assets/sofa.gif" alt="Sofá Margot II - Rosé" class="img-item-sell-3d hide">
+      </div>
+      <div class="desc-item">
+        <p class="cod-item">Código: 42404</p>
+        <h3 class="title-item">Sofá Margot II-Rosé</h3>
+        <p class="price-item">R$: <span class="price-item" id="priceItem">4.000</span></p>
+        <div class="button-add-item">
+          <button class="add-item" id="addItem">Adicionar à cesta</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="success hide">
+    <h1 class="message">Compra realizada com sucesso!</h1>
+    <h1 class="message-2">Acompanhe seu pedido através do
+      <a href="https://github.com/iamsandralima" target="_blank">site</a>
+    </h1>
+    <h1 class="message-2">Obrigada!</h1>
+  </div>
+
+  <section>
+    <footer>
+      <div class="divider"></div>
+      <p class="footer_copy">CNPJ: 14.055.516/0005-90 - Tel.:(11) 4932-0342</p><br>
+      <p class="footer_copy"> &#169; Sandra Lima 2023</p>
+    </footer>
+  </section>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
